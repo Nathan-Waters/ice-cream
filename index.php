@@ -8,10 +8,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
     <title>Ice Cream Shoppe</title>
-</head>
-<body>
+</head><body>
 <div class="container">
+    <h1>Welcome to my Ice Cream Shoppe!</h1>
+    <form action="process.php" method="post">
 
-    <h1>Thank you for your order!</h1><h2>Order Summary</h2><p>Flavor(s): strawberry, caramel</p><p>Cone: sugar</p><p>Scoops: 3</p><p>Subtotal: $6.00</p><p>Total with Tax: $6.48</p>    </div>
+        <h3>Choose a flavor</h3>
+        <label><input type='checkbox' name='flavor[]' value='vanilla'> Vanilla</label><br><label><input type='checkbox' name='flavor[]' value='chocolate'> Chocolate</label><br><label><input type='checkbox' name='flavor[]' value='strawberry'> Strawberry</label><br><label><input type='checkbox' name='flavor[]' value='caramel'> Caramel</label><br>
+        <h3>Choose One</h3>
+        <label><input type='radio' name='cone' value='sugar'> Sugar Cone</label><br><label><input type='radio' name='cone' value='waffle'> Waffle Cone</label><br><label><input type='radio' name='cone' value='cup'> Cup</label><br>
+        <h3>How many scoops?</h3>
+        <input type="text" name="scoops" ><br>
+
+        <br>
+        <button type="submit">Place Order</button>
+    </form>
+</div>
 </body>
 </html>
